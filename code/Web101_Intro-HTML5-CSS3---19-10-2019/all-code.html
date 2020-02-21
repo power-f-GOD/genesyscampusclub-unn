@@ -1,0 +1,216 @@
+<!-- 1 -->
+<table>
+  <tr>
+     <td></td>
+     <td></td>
+     <td></td>
+  </tr>
+</table>
+
+<!-- 2 -->
+<table border="2">
+  <tr>
+     <td>Red</td>
+     <td>Blue</td>
+     <td>Green</td>
+  </tr>
+  <tr>
+     <td><br /></td>
+     <td colspan="2"><br /></td>
+  </tr>
+</table>
+
+<!-- 3 -->
+<table border="2">
+  <tr>
+     <td>Red</td>
+     <td>Blue</td>
+     <td>Green</td>
+  </tr>
+  <tr>
+     <td>Yellow</td>
+     <td colspan="2">Orange</td>
+  </tr>
+</table>
+
+<!-- 4 -->
+<table border="2">
+  <tr>
+     <td bgcolor="red">Red</td>
+     <td>Blue</td>
+     <td>Green</td>
+  </tr>
+  <tr>
+     <td>Yellow</td>
+     <td colspan="2">Orange</td>
+  </tr>
+</table>
+
+<!-- block element sample -->
+<html>
+  <body>
+    <h1>Headline</h1>
+    <div style="background-color:green; color:white; padding:20px;">
+      <p>Some paragraph text goes here.</p>
+      <p>Another paragraph goes here.</p>
+    </div>
+  </body>
+</html>
+
+<!-- inline element sample -->
+<html>
+  <body>
+    <h2>Some 
+      <span style="color:red">Important</span>
+    Message</h2>
+  </body>
+</html>
+
+<!-- form basic  -->
+<form>
+   <input type="text" name="username" /><br />
+   <input type="password" name="password" />
+</form>
+
+<!-- form radio -->
+<input type="radio" name="gender" value="male" /> Male <br />
+<input type="radio" name="gender" value="female" /> Female <br />
+
+
+
+<!-- CSS3 -->
+
+<!-- inline -->
+<p style="color: white; background-color: gray;">
+   This is an example of inline styling. 
+</p>
+
+<!-- id  -->
+<div id="intro">
+  <p> This paragraph is in the intro section.</p>
+</div>
+<p> This paragraph is not in the intro section.</p>
+
+<!-- child selectors -->
+<div id="intro">
+  <p class="first">This is a <em> paragraph.</em></p>
+  <p> This is the second paragraph. </p>
+</div>
+<p class="first"> This is not in the intro section.</p>
+<p> The second paragraph is not in the intro section. </p>
+
+<!-- inheritance -->
+<html>
+   <head>
+      <style>
+        body {
+           color: green;
+           font-family: Arial;
+        }
+     </style>
+   </head>
+   <body>       
+      <p>
+      This is a text inside the paragraph. 
+      </p>
+   </body>
+</html>
+
+<!-- borders  -->
+<p class="first">
+    Border width of this paragraph is set to 2px.
+</p>
+<p class="second">
+    Border width of this paragraph is set to 5px.
+</p>
+<style>
+  p.first {
+   padding: 10px;    
+   border-style: solid;
+   border-width: 2px;
+  }
+  p.second {
+    padding: 10px;    
+    border-style: solid;
+    border-width: 5px;
+  }
+</style>
+
+<!-- border-color -->
+<p class="first">
+  Border color has been created using <strong>color name.</strong>
+</p>
+<p class="second">
+  Border color has been created using <strong>Hex values.</strong> 
+</p>
+<p class="third">
+  Border color has been created using <strong>RGB values.</strong> 
+</p>
+<style>
+  p.first {
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+  }
+  p.second {
+    padding: 10px;    
+    border-style: solid;
+    border-width: 2px;
+    border-color: #FF6600;
+  } 
+  p.third {
+    padding: 10px;    
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(0, 153, 0);
+  } 
+</style>
+
+<!-- border-style -->
+<p class="none">This paragraph has no border.</p>
+<p class="dotted">This is a dotted border.</p>
+<p class="dashed">This is a dashed border.</p>
+<p class="double">This is a double border.</p>
+<p class="groove">This is a grooved border.</p>
+<p class="ridge">This is a ridged border.</p>
+<p class="inset">This is an inset border.</p>
+<p class="outset">This is an outset border.</p>
+<p class="hidden">This is a hidden border.</p>
+<style>
+  p.none {border-style: none;}
+  p.dotted {border-style: dotted;}
+  p.dashed {border-style: dashed;}
+  p.double {border-style: double;}
+  p.groove {border-style: groove;}
+  p.ridge {border-style: ridge;}
+  p.inset {border-style: inset;}
+  p.outset {border-style: outset;}
+  p.hidden {border-style: hidden;}
+</style>
+
+<!-- width, height measurements -->
+<div>The total width of this element is <strong>100%</strong> and the total height is <strong>100px</strong> .</div>
+<style>
+  div {
+    border: 5px solid green;    
+    width: 100%;
+    height: 90px;
+  }
+</style>
+
+<!-- min and max heights and widths  -->
+<p class="first">The <strong>minimum height </strong> of this paragraph is set to 100px.</p>
+<p class="second">The<strong> maximum width </strong> of this paragraph is set to 100px.</p>
+<style>
+  p.first {
+    border: 5px solid green;    
+    min-height: 100px;       
+  }
+  p.second {
+    border: 5px solid green;    
+    max-width: 100px;       
+  }
+</style>
+
+

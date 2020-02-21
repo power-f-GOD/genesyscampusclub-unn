@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Registration | JAMB</title>
+      <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+  </head>
+  <body bgcolor="lightgreen">
+    <!-- Form section start -->
+    <h1><span>JAMB Registration Form</span></h1>
+    <form action='#' method="POST">
+      <table border="1">
+        <tr>
+          <td><b>First name:</b></td>
+          <td><input name="firstname" type="text" /></td>
+        </tr>
+        <tr>
+          <td><b>Last name:</b></td>
+          <td><input name="lastname" type="text" /></td>
+        </tr>
+        <tr>
+          <td><b>E-mail:</b></td>
+          <td><input name="email" type="email" /></td>
+        </tr>
+        <tr>
+          <td><b>Phone:</b></td>
+          <td><input name='phone' type="tel" /></td>
+        </tr>
+        <tr>
+          <td><b>Sex:</b></td>
+          <td>
+            <input type="radio" name='sex' value='m' />Male
+            <input type="radio" name='sex' value="f" />Female
+            <input type="radio" name="sex" value="" />Prefer not to say
+          </td>
+        </tr>
+        <tr>
+          <td><b>Date of Birth (DD/MM/YY):</b></td>
+          <td><input name='birthday' type="text" /></td>
+        </tr>
+        <tr>
+          <td><b>Password:</b></td>
+          <td><input name='password' type="password" /></td>
+        </tr>
+        <tr>
+          <td><b>Select Subjects:</b></td>
+          <td>
+            <table>
+              <tr>
+                <td>
+                  <input type="checkbox" value="english" />English
+                </td>
+                <td>
+                  <input type="checkbox" value="maths" />Mathematics
+                </td>
+                <td>
+                  <input type="checkbox" value='physics' />Physics
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" value="accounting" />Accounting
+                </td>
+                <td>
+                  <input type='checkbox' value="chemistry" />Chemistry
+                </td>
+                <td>
+                  <input type="checkbox" value="commerce" />Commerce
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" value="government" />Government
+                </td>
+                <td>
+                  <input type='checkbox' value="biology" />Biology
+                </td>
+                <td>
+                  <input type="checkbox" value='literature' />Literature
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" value="Submit" class="submit" width="2000px" />
+          </td>
+        </tr>
+      </table>
+    </form>
+    <!-- Form section end -->
+  </body>
+</html>
