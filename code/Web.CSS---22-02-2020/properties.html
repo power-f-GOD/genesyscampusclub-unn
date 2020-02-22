@@ -1,0 +1,416 @@
+<!-- SECTION - Borders -->
+
+<!-- SUB-SECTION - The border Property -->
+<p>This is an example of a solid border.</p>
+<style>
+  p {
+    padding: 10px;
+    border: 5px solid green;
+  }
+</style>
+
+<!-- SUB-SECTION - Border Width -->
+<p class="first">
+  Border width of this paragraph is set to 2px.
+</p>
+<p class="second">
+  Border width of this paragraph is set to 5px.
+</p>
+<style>
+  p.first {
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+  }
+
+  p.second {
+    padding: 10px;
+    border-style: solid;
+    border-width: 5px;
+  }
+</style>
+
+<!-- SUB-SECTION - Border Color -->
+<p class="first">
+  Border color has been created using <strong>color name.</strong>
+</p>
+<p class="second">
+  Border color has been created using <strong>Hex values.</strong>
+</p>
+<p class="third">
+  Border color has been created using <strong>RGB values.</strong>
+</p>
+<style>
+  p.first {
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+  }
+
+  p.second {
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #FF6600;
+  }
+
+  p.third {
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(0, 153, 0);
+  }
+</style>
+
+<!-- SUB-SECTION - The border-style Property -->
+<p class="none">This paragraph has no border.</p>
+<p class="dotted">This is a dotted border.</p>
+<p class="dashed">This is a dashed border.</p>
+<p class="double">This is a double border.</p>
+<p class="groove">This is a grooved border.</p>
+<p class="ridge">This is a ridged border.</p>
+<p class="inset">This is an inset border.</p>
+<p class="outset">This is an outset border.</p>
+<p class="hidden">This is a hidden border.</p>
+<style>
+  p.none {
+    border-style: none;
+  }
+
+  p.dotted {
+    border-style: dotted;
+  }
+
+  p.dashed {
+    border-style: dashed;
+  }
+
+  p.double {
+    border-style: double;
+  }
+
+  p.groove {
+    border-style: groove;
+  }
+
+  p.ridge {
+    border-style: ridge;
+  }
+
+  p.inset {
+    border-style: inset;
+  }
+
+  p.outset {
+    border-style: outset;
+  }
+
+  p.hidden {
+    border-style: hidden;
+  }
+</style>
+
+<!-- SECTION - Width and Height -->
+
+<!-- SUB-SECTION - CSS Width and Height -->
+<div>The total width and height of this element is 100px.</div>
+<style>
+  div {
+    border: 5px solid green;
+    width: 90px;
+    height: 90px;
+  }
+</style>
+
+<!-- SUB-SECTION - Width and Height Measurement -->
+<div>The total width of this element is <strong>100%</strong> and the total height is <strong>100px</strong> .</div>
+<style>
+  div {
+    border: 5px solid green;
+    width: 100%;
+    height: 90px;
+  }
+</style>
+
+<!-- SUB-SECTION - The Minimum and Maximum Sizes -->
+<p class="first">The <strong>minimum height </strong> of this paragraph is set to 100px.</p>
+<p class="second">The<strong> maximum width </strong> of this paragraph is set to 100px.</p>
+<style>
+  p.first {
+    border: 5px solid green;
+    min-height: 100px;
+  }
+
+  p.second {
+    border: 5px solid green;
+    max-width: 100px;
+  }
+</style>
+
+<!-- SECTION - background-color -->
+
+<!-- SUB-SECTION - The background-color Property -->
+<p>The background color of this page is set to LightSkyBlue.</p>
+<style>
+  body {
+    background-color: #87CEFA;
+  }
+</style>
+
+<!-- SUB-SECTION - The Background Color Values -->
+<h1>This is a heading</h1>
+<p>This is a paragraph</p>
+<style>
+  body {
+    background-color: #C0C0C0;
+  }
+
+  h1 {
+    background-color: rgb(135, 206, 235);
+  }
+
+  p {
+    background-color: LightGreen;
+  }
+</style>
+
+<!-- SECTION - background-image -->
+
+<!-- SUB-SECTION - The background-image Property -->
+<style>
+  body {
+    background-image: url("css_logo.png");
+    background-color: #e9e9e9;
+  }
+</style>
+<p>This paragraph has a background image.</p>
+<style>
+  p {
+    padding: 30px;
+    background-image: url("green_photo.jpg");
+    color: white;
+  }
+</style>
+
+<!-- SECTION - background-repeat -->
+
+<!-- SUB-SECTION - The background-repeat Property -->
+<style>
+  body {
+    background-image: url("css_logo.png");
+    background-repeat: repeat-x;
+  }
+</style>
+<style>
+  body {
+    background-image: url("css_logo.png");
+    background-repeat: repeat-y;
+  }
+</style>
+
+<!-- SUB-SECTION - Setting the Value to Inherit -->
+<style>
+  body {
+    background-image: url("css_logo.png");
+    background-repeat: repeat-x;
+  }
+
+  p {
+    background-image: url("css_logo.png");
+    background-repeat: inherit;
+    margin-top: 100px;
+    padding: 40px;
+  }
+</style>
+
+<!-- SECTION - background-attachment -->
+
+<!-- SUB-SECTION - The background-attachment Property -->
+<style>
+  body {
+    background-image: url("css_logo.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+</style>
+
+<!-- SUB-SECTION - The background-attachment Values -->
+<style>
+  body {
+    background-image: url("css_logo.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+</style>
+
+<!-- SECTION - Styling the Lists -->
+
+<!-- SUB-SECTION - The list-style-type Property
+ -->
+<ol class="lower-alpha">
+  <li>Red</li>
+  <li>Green</li>
+  <li>Blue</li>
+</ol>
+<ul class="circle">
+  <li>Red</li>
+  <li>Green</li>
+  <li>Blue</li>
+</ul>
+<ul class="square">
+  <li>Red</li>
+  <li>Green</li>
+  <li>Blue</li>
+</ul>
+<style>
+  ol.lower-alpha {
+    list-style-type: lower-alpha;
+  }
+
+  ul.circle {
+    list-style-type: circle;
+  }
+
+  ul.square {
+    list-style-type: square;
+  }
+</style>
+
+<!-- SECTION - Styling the Tables -->
+
+<!-- SUB-SECTION - The Table Properties -->
+<table border="1">
+  <tr>
+    <td>Red</td>
+    <td>Green</td>
+  </tr>
+  <tr>
+    <td>Blue</td>
+    <td>Yellow</td>
+  </tr>
+</table>
+<style>
+  table {
+    border-collapse: separate;
+    border-spacing: 20px 40px;
+  }
+</style>
+
+<!-- SUB-SECTION - The caption-side Property -->
+<table border="1">
+  <caption>Some of Our Courses</caption>
+  <tr>
+    <th>Course name</th>
+    <th>Lessons</th>
+    <th>Quizzes</th>
+  </tr>
+  <tr>
+    <td>C++</td>
+    <td>81</td>
+    <td>363</td>
+  </tr>
+  <tr>
+    <td>JavaScript</td>
+    <td>48</td>
+    <td>144</td>
+  </tr>
+  <tr>
+    <td>HTML</td>
+    <td>38</td>
+    <td>119</td>
+  </tr>
+  <tr>
+    <td>CSS</td>
+    <td>70</td>
+    <td>174</td>
+  </tr>
+</table>
+<style>
+  caption {
+    caption-side: top;
+  }
+</style>
+
+<!-- SUB-SECTION - The empty-cells Property -->
+<table border="1">
+  <tr>
+    <td>HTML</td>
+    <td>CSS</td>
+  </tr>
+  <tr>
+    <td>JavaScript</td>
+    <td></td>
+  </tr>
+</table>
+<style>
+  table {
+    border-collapse: separate;
+    empty-cells: hide;
+  }
+</style>
+
+<!-- SUB-SECTION - The table-layout Property -->
+<p>Table-layout is set to <strong>auto</strong></p>
+<table class="auto">
+  <tr>
+    <td width=“10%">500.000.000.000.000</td>
+    <td width="90%">20.000</td>
+  </tr>
+</table>
+
+<p>Table-layout is set to <strong>fixed</strong></p>
+<table class="fixed">
+  <tr>
+    <td width="10%">500.000.000.000.000</td>
+    <td width="90%">20.000</td>
+  </tr>
+</table>
+<style>
+  table {
+    border-collapse: separate;
+    width: 100%;
+    border: 1px solid gray;
+  }
+
+  td {
+    border: 1px solid gray;
+  }
+
+  table.auto {
+    table-layout: auto;
+  }
+
+  table.fixed {
+    table-layout: fixed;
+  }
+</style>
+
+<!-- SECTION - Styling the Links -->
+
+<!-- SUB-SECTION - Setting Styles to Links -->
+<p><a href="http://www.genesystechhub.com" target="_blank">
+    This link is hovered when we mouse over it
+  </a></p>
+<style>
+  a:hover {
+    color: red;
+  }
+</style>
+
+<!-- SUB-SECTION - Links' Text Decoration -->
+<p><a href="http://www.genesystechhub.com" target="_blank">
+    This link has no underline.
+  </a></p>
+<style>
+  a:link {
+    text-decoration: none;
+  }
+</style>
+
+<!-- SECTION - Customizing the Mouse Cursor -->
+
+<!-- SUB-SECTION - Setting the Mouse Cursor Style -->
+<span style="cursor:help;">
+  Do you need help?
+</span>

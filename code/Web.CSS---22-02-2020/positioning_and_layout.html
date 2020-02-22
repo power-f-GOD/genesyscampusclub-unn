@@ -1,0 +1,253 @@
+<!-- SECTION - The display Property -->
+
+<!-- SUB-SECTION - display: block -->
+<span>First paragraph.</span>
+<span>Second paragraph.</span>
+<span>Third paragraph.</span>
+<span>Fourth paragraph.</span>
+<span>Fifth paragraph.</span>
+<style>
+  span {
+    display: block;
+  }
+</style>
+
+<!-- SUB-SECTION - display: inline -->
+<p>First paragraph.</p>
+<p>Second paragraph.</p>
+<p>Third paragraph.</p>
+<p>Fourth paragraph.</p>
+<p>Fifth paragraph.</p>
+<style>
+  p {
+    display: inline;
+  }
+</style>
+
+<!-- SUB-SECTION - display: none -->
+<h1>This text will not display, as we set the value to none.</h1>
+<p>Headline of this paragraph is not displayed, as we set the value to none.</p>
+<style>
+  h1 {
+    display: none;
+  }
+</style>
+
+<!-- SECTION - The visibility Property -->
+
+<!-- SUB-SECTION - The visibility Property -->
+<h1>This is a heading</h1>
+<div class="hidden">
+  This text will not display in browser.
+</div>
+<p>
+  The space above this paragraph is empty because
+  the visibility of the div element is set to hidden.
+</p>
+<style>
+  div.hidden {
+    visibility: hidden;
+  }
+</style>
+<style>
+  div.hidden {
+    display: none;
+  }
+</style>
+
+<!-- SECTION - Positioning -->
+
+<!-- SUB-SECTION - Positioning Elements -->
+<p>Paragraph with no position.</p>
+<p>Paragraph with no position.</p>
+<p>Paragraph with no position.</p>
+<p>Paragraph with no position.</p>
+<p>Paragraph with no position.</p>
+<p class="position_static">This paragraph has a static position.</p>
+<style>
+  p.position_static {
+    position: static;
+    top: 30px;
+    right: 5px;
+    color: red;
+  }
+</style>
+
+<!-- SUB-SECTION - Fixed Positioning
+ -->
+<style>
+  p.position_fixed {
+    position: fixed;
+    top: 30px;
+    right: 5px;
+    color: red;
+  }
+</style>
+
+
+<!-- SUB-SECTION - Relative Positioning -->
+<style>
+  p {
+    width: 350px;
+    border: 1px black solid;
+    position: fixed;
+  }
+
+  span {
+    background: green;
+    color: white;
+    position: relative;
+    top: 150px;
+    left: 50px;
+  }
+</style>
+
+<!-- SECTION - Floating -->
+
+<!-- SUB-SECTION - Floating -->
+<p><img src="css_logo.png" />
+  This paragraph has an image that is floated to the <strong>right.</strong>
+  It is highly recommended to add a margin to images so that the text does
+  not get too close to the image. If you want your text to be easily read, you
+  should always add a few pixels between words and borders, images,
+  and other content.
+</p>
+<style>
+  img {
+    float: right;
+  }
+</style>
+
+<!-- SUB-SECTION - Elements Next to Each Other -->
+<style>
+  img {
+    float: left;
+    width: 120px;
+    margin-right: 10px;
+  }
+
+  p {
+    width: 120px;
+    float: left;
+  }
+</style>
+
+<!-- SECTION - The clear Property -->
+
+<!-- SUB-SECTION - Clearing the Float -->
+This paragraph is above the div element
+and is not affected by the float right property.
+<br /><br />
+<div class="floating">
+  <img src="css_logo.png" />
+</div>
+This paragraph comes after the div element
+and is affected by the float right property.
+<br /><br />
+This paragraph also comes after the div element
+and is affected by the float right property.
+<br /> <br />
+<style>
+  .floating {
+    float: right;
+  }
+</style>
+
+<!-- SUB-SECTION - Clearing Floats -->
+This paragraph is above the div element
+and is not affected by the float right property.
+<br /><br />
+<div class="floating">
+  <img src="css_logo.png" />
+</div>
+This paragraph comes after the div element
+and is affected by the float right property.
+<br /><br class="clearing" />
+This paragraph is out of the floating group
+and is not affected by the float right property.
+<br /> <br />
+<style>
+  .floating {
+    float: right;
+  }
+
+  .clearing {
+    clear: both;
+  }
+</style>
+
+<!-- SECTION - The overflow Property -->
+
+<!-- SUB-SECTION - The overflow Property -->
+<div>
+  This text is inside the div element, which has a blue
+  background color and is floated to the left. We set a specific
+  height and width for the div element, and as you can see,
+  the content cannot fit.
+</div>
+<style>
+  div {
+    width: 150px;
+    height: 150px;
+    background-color: LightBlue;
+    float: left;
+  }
+</style>
+
+<!-- SUB-SECTION - The overflow Property Values -->
+<style>
+  div {
+    width: 150px;
+    height: 150px;
+    background-color: LightBlue;
+    float: left;
+    overflow: scroll;
+  }
+</style>
+
+<!-- SUB-SECTION - auto and hidden -->
+<style>
+  div {
+    width: 150px;
+    height: 150px;
+    background-color: LightBlue;
+    float: left;
+    overflow: hidden;
+  }
+</style>
+
+<!-- SECTION - The z-index Property -->
+
+<!-- SUB-SECTION - The z-index Property -->
+<style>
+  .blue {
+    background-color: #8EC4D0;
+    margin-bottom: 15px;
+    width: 120px;
+    height: 120px;
+    color: #FFF;
+  }
+
+  .red {
+    background-color: #FF4D4D;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    color: #FFF;
+    margin-top: -50px;
+    margin-left: 50px;
+  }
+</style>
+
+<!-- SUB-SECTION - Assigning the z-index Property -->
+<style>
+  .blue {
+    z-index: 3;
+    position: relative;
+  }
+
+  .red {
+    z-index: 2;
+    position: relative;
+  }
+</style>
