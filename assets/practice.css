@@ -108,34 +108,25 @@ main .content {
 }
 
 /* Style the footer */
-footer .section-1,
-footer .section-2 {
-  padding: 50px;
-  text-align: center;
-  color: #555;
-}
-
 footer .section-1 {
   background-color: #f1f1f1;
+  padding: 20px;
 }
 
-footer .section-1 a,
 footer .section-2 a {
   text-decoration: none;
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 5px;
   color: inherit;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
-footer .section-1 a:hover,
 footer .section-2 a:hover {
   color: #222;
   text-decoration: underline;
 }
 
 footer .section-2 {
-  color: #888;
+  color: #666;
+  text-align: center;
+  padding: 50px;
   background-color: #ddd;
 }
